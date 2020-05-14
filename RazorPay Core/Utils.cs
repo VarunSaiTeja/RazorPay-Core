@@ -8,7 +8,7 @@ namespace Razorpay.Api
 {
     public class Utils
     {
-        private static bool ValidatePaymentSignature(Dictionary<string, string> attributes)
+        public static bool ValidatePaymentSignature(Dictionary<string, string> attributes)
         {
             string expectedSignature = attributes["razorpay_signature"];
             string orderId = attributes["razorpay_order_id"];
