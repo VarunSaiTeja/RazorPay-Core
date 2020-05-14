@@ -1,13 +1,30 @@
-using System;
-using System.Text;
 using Razorpay.Api.Errors;
+using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace Razorpay.Api
 {
     public class Utils
     {
+        private static bool ValidatePaymentSignature(Dictionary<string, string> attributes)
+        {
+            string expectedSignature = attributes["razorpay_signature"];
+            string orderId = attributes["razorpay_order_id"];
+            string paymentId = attributes["razorpay_payment_id"];
+
+            string payload = string.Format("{0}|{1}", orderId, paymentId);
+
+            string secret = RazorpayClient.Secret;
+
+            string actualSignature = getActualSignature(payload, secret);
+
+            bool verified = actualSignature.Equals(expectedSignature);
+
+            return verified;
+        }
+
         public static void verifyPaymentSignature(Dictionary<string, string> attributes)
         {
             string expectedSignature = attributes["razorpay_signature"];
