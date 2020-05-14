@@ -14,9 +14,9 @@ https://razorpay.com/docs/server-integration/dot-net/</Description>
     <PackageIcon>icon.png</PackageIcon>
     <PackageId>RazorPay.Core</PackageId>
     <PackageTags>RazorPayCore, RazorPayASPCore, RazorPayAPICore</PackageTags>
-    <AssemblyVersion>1.0.0.1</AssemblyVersion>
-    <FileVersion>1.0.0.1</FileVersion>
-    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+    <FileVersion>1.0.0.2</FileVersion>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
