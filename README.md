@@ -17,7 +17,7 @@ Installation
 If you are using nuget package manager:
 
 `
-Install-Package Razorpay
+Install-Package RazorPay.Core
 `
 Usage
 -----
