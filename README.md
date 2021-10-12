@@ -1,7 +1,11 @@
 # RazorPay-Core
+This package is just ported version of official RazorPay to also support .NET Core
 
+For Official Documentaion
 
-[!["Buy Me A Coffee"](https://cdn.buymeacoffee.com/assets/img/home-page-v3/bmc-new-logo.png)](https://www.buymeacoffee.com/varunteja)
+https://github.com/razorpay/razorpay-dot-net
+
+https://razorpay.com/docs/server-integration/dot-net/
 
 =================  
 Razorpay client .NET Api. The api follows the following practices
@@ -96,3 +100,7 @@ options.Add("fail_existing", 0);
 
 Customer customer = Customer.Create(options);
 ```
+
+=================  
+
+[!["Buy Me A Coffee"](https://cdn.buymeacoffee.com/assets/img/home-page-v3/bmc-new-logo.png)](https://www.buymeacoffee.com/varunteja)
